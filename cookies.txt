@@ -1,0 +1,62 @@
+Cookies
+_______________
+
+-> cookie is a second way of transfering data between classes by using response redirect. 
+
+-> cookie acts as a token to trasfer a string type data for each travel of response.
+
+-> in java cookie is a class from javax.servlet.http.cookie.
+
+-> constructor of cookie accepts string name and string value as an argument.
+
+-> after we are done creating a cookie object a method called addcookie() which accepts object of cookie as an argument from response object is called t0 add cookie inside response
+
+-> as we know the response gets converted to request and is redirected to following servlet classes 
+
+-> to access cookie object we have a method called getcookies() from cookies object which returns array of cookie (cookie[])
+
+->to read the data from cookie object we have a method called getname() which returns the name of cookie and this name can be used to identify the required cookie
+
+->after we get required cookie we have a method called get value which is used to return data or value inside cookie object
+
+->both of this getname() and getvalue() are non static methods from cookie class.
+
+
+
+
+Disadvantages of Cookies
+_________________________
+
+->the data transfer using cookie object is accessible in web browser as web  browser has a feature of saving a cookie.
+
+->by using cookie we can transfer only string type data.
+
+->transfering the data using cookie object is inefficient  as cookie can transfer for only one instance and then to transfer the data between servlet class a cookie has to travel with req as well as with response.
+
+
+
+
+note
+____
+
+
+->getcookies() method from req object returns array of cookie contains cookies from previous class as well as cookies those are saved in  web browser
+
+
+->setmaxage().
+
+
+
+->url rewriting.
+
+->cokkie
+
+  . only string type data.
+
+  . data is visible in web browser.
+ 
+  . in efficient.
+  
+  . session( is an object of httpsession(object of implementing class of httpinterface)).
+
+->
